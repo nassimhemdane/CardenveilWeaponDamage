@@ -1,0 +1,142 @@
+{
+  "samplesPerCase": 1000000,
+  "example": [
+    {
+      "mode": "Precise",
+      "finesse": 9.654099508459076,
+      "strength": 14.951557203030337,
+      "finesseMiss": 0.0000035722450845907622,
+      "strengthMiss": 2.790816472336533e-8,
+      "finesseImpacts": 0.9999964277549154,
+      "strengthImpacts": 0.9999999720918353
+    },
+    {
+      "mode": "Engagement 0",
+      "finesse": 20.607253086419753,
+      "strength": 20.758308818801446,
+      "finesseMiss": 0.00012860082304526745,
+      "strengthMiss": 0.000004018775720164608,
+      "finesseImpacts": 1.5979938271604937,
+      "strengthImpacts": 0.9999959812242798
+    },
+    {
+      "mode": "Engagement 1",
+      "finesse": 23.63888888888889,
+      "strength": 22.96498842592593,
+      "finesseMiss": 0.0046296296296296285,
+      "strengthMiss": 0.0005787037037037036,
+      "finesseImpacts": 1.4166666666666665,
+      "strengthImpacts": 0.9994212962962963
+    },
+    {
+      "mode": "Engagement 2",
+      "finesse": 20,
+      "strength": 21.625000000000004,
+      "finesseMiss": 0.16666666666666666,
+      "strengthMiss": 0.08333333333333333,
+      "finesseImpacts": 1,
+      "strengthImpacts": 0.9166666666666666
+    },
+    {
+      "mode": "Engagement 3",
+      "finesse": 13.30555555555556,
+      "strength": 18.69994212962963,
+      "finesseMiss": 0.4212962962962963,
+      "strengthMiss": 0.2297453703703705,
+      "finesseImpacts": 0.5833333333333334,
+      "strengthImpacts": 0.7702546296296295
+    },
+    {
+      "mode": "Engagement 4",
+      "finesse": 10.619598765432103,
+      "strength": 17.71539633166152,
+      "finesseMiss": 0.598122427983539,
+      "strengthMiss": 0.35277215149176966,
+      "finesseImpacts": 0.4020061728395063,
+      "strengthImpacts": 0.6472278485082303
+    },
+    {
+      "mode": "Engagement 5",
+      "finesse": 8.439364711934159,
+      "strength": 16.82012700838316,
+      "finesseMiss": 0.7209183527663465,
+      "strengthMiss": 0.4561488217396121,
+      "finesseImpacts": 0.27908521947873804,
+      "strengthImpacts": 0.5438511782603879
+    }
+  ],
+  "validation": [
+    {
+      "name": "Finesse default E0",
+      "exact": 20.607253086419753,
+      "monteCarlo": 20.589517000001404,
+      "difference": -0.017736086418349117,
+      "standardError": 0.009208075558734903,
+      "zScore": -1.926144752529146,
+      "passed": true
+    },
+    {
+      "name": "Finesse default E2",
+      "exact": 20,
+      "monteCarlo": 20.00157499999929,
+      "difference": 0.0015749999992884511,
+      "standardError": 0.01336602510733851,
+      "zScore": 0.11783607966019082,
+      "passed": true
+    },
+    {
+      "name": "Strength default E1",
+      "exact": 22.96498842592593,
+      "monteCarlo": 22.969703999999716,
+      "difference": 0.004715574073784978,
+      "standardError": 0.004837968329611256,
+      "zScore": 0.9747013110695348,
+      "passed": true
+    },
+    {
+      "name": "Finesse precise",
+      "exact": 9.654099508459076,
+      "monteCarlo": 9.653010999999923,
+      "difference": -0.0010885084591532035,
+      "standardError": 0.0006156248962420407,
+      "zScore": -1.7681358661707578,
+      "passed": true
+    },
+    {
+      "name": "Negative advantage / modifier, raw",
+      "exact": 0.06680812757201626,
+      "monteCarlo": 0.06687399999999868,
+      "difference": 0.00006587242798242188,
+      "standardError": 0.00028253840084482466,
+      "zScore": 0.23314504430355376,
+      "passed": true
+    },
+    {
+      "name": "Repeat state, On Hit +3",
+      "exact": 40.883896790123444,
+      "monteCarlo": 40.8835319999996,
+      "difference": -0.00036479012384660336,
+      "standardError": 0.03263010336987313,
+      "zScore": -0.01117955771428565,
+      "passed": true
+    },
+    {
+      "name": "Exploding original, negative clamped",
+      "exact": 0.32721310325476693,
+      "monteCarlo": 0.3286910000000041,
+      "difference": 0.0014778967452371838,
+      "standardError": 0.0017312620320989135,
+      "zScore": 0.8536528369685554,
+      "passed": true
+    },
+    {
+      "name": "Modifier crit, negative clamped",
+      "exact": 2.7342463991769552,
+      "monteCarlo": 2.7363799999999707,
+      "difference": 0.0021336008230155024,
+      "standardError": 0.001668309707115974,
+      "zScore": 1.2788997234235857,
+      "passed": true
+    }
+  ]
+}
